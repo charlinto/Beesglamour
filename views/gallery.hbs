@@ -1,0 +1,18 @@
+<section id="gallery" class="py-5">
+    <div class="container">
+         <h1 class="text-center">Photo Gallery</h1>
+          <p class="text-center">check out our photos</p>
+          <div class="row mb-4">
+            {{#each postphoto}}
+           <div  class="col-md-4">
+                 <a href="" data-toggle="ligntbox" data-gallery="img-gallery">
+        
+                <img class="galphoto" src="{{this.postgalleryImage}}" class="img-fluid">
+            </a>
+            <div class="desc">{{this.postgalleryDesc}}</div>
+           </div>
+           {{/each}}
+          </div>
+    </div>
+
+</section>

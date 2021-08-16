@@ -1,0 +1,52 @@
+<!-- Page info section -->
+<section class="page-info-section set-bg" data-setbg="/frontend/img/page-top-bg/3.jpg">
+    <div class="container text-center">
+        <h2>Contact Us</h2>
+    </div>
+</section>
+<!-- Page info section end -->
+<!-- Contact section -->
+<section class="contact-section spad">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 contact-content">
+                <h2 class="contact-title">Bee's Glamour Beauty Palace</h2>
+                <p>In vitae nisi aliquam, scelerisque leo a, volutpat sem. Vivamus rutrum dui fermentum eros hendrerit,
+                    id lobortis leo volutpat. In vitae nisi aliquam, scelerisque leo a, volutpat sem. Vivamus rutrum dui
+                    fermentum eros hen-drerit, id lobortis leo volutpat.</p>
+                <div class="ci-item">
+                    <div class="ca-icon">
+                        <img src="/frontend/img/icons/map.png" alt="">
+                    </div>
+                    <div class="ca-text">4127 Raoul Wallenber4127 Raoul<br>Wallen berg Placea</div>
+                </div>
+                <div class="ci-item">
+                    <div class="ca-icon">
+                        <img src="/frontend/img/icons/phone.png" alt="">
+                    </div>
+                    <div class="ca-text">203-808-8613</div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <h2 class="contact-title">Apply For Training </h2>
+                {{> messages}}
+                <form  action ="/getintouch" method ="POST" class="contact-form">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input type="text" placeholder="Your Name" name ="fullname">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" placeholder="Your phonenumber" name ="phonenumber">
+                        </div>
+                        <div class="col-md-12">
+                            <input type="text" placeholder="Subject"name ="subject">
+                            <textarea placeholder="Your Message" name ="message"></textarea>
+                            <button class="site-btn">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="map-area" id="map-canvas"></div>
+    </div>
+</section>

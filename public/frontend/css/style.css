@@ -1,0 +1,33 @@
+.img-caro{
+    width: 700px !important;
+    height: 700px!important;
+  }   
+ 
+ .img-trend{
+  width: 50px !important;
+  height: 50px!important;
+} 
+ .entry2 img { 
+  margin-bottom: 30px; }
+
+.entry2 h2 {
+  font-size: 24px;
+  margin-bottom: 30px;
+  font-weight: 700; }
+  .entry2 h2 a {
+    color: #000; }
+
+.entry2 .excerpt {
+  padding-left: 20px;
+  padding-right: 20px; }
+
+.entry2 .post-meta {
+  color: #b3b3b3;
+  font-size: 13px;
+  width: 100%;
+  display: block; }
+  .entry2 .post-meta a {
+    color: #000; }
+  .entry2 .post-meta .author-figure img {
+    width: 30px;
+    border-radius: 50%; } 

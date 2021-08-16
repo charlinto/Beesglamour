@@ -1,0 +1,53 @@
+<!-- Page Preloder -->
+
+<!-- Header section -->
+<header class="header-section">
+	<div class="header-warp">
+		 {{!-- <div class="tab-pane fade" id="tab-7" role="tabpanel" aria-labelledby="tab-7"> --}}
+
+
+		 <!-- logo -->
+				<a href="index-2.html" class="site-logo">
+					<img  class="img-logo" src="/frontend/img/beeeeees.jpg" alt="">
+					{{!-- <P class="font-weight-bold">BEE"S GLAMOUR</P> --}}
+					{{!-- <P>BEAUTY PALACE</P> --}}
+				</a>
+				<!-- responsive -->
+				<div class="nav-switch">
+					<i class="fa fa-bars"></i>
+				</div>
+				<!-- Navigation Menu -->
+				<ul class="main-menu">
+					<li class="{{#if activeClass}}active{{/if}} nothing"><a href="/">Home</a></li>
+					<li ><a href="/about">About Us</a></li>
+					<li><a href="/services">Services</a></li>
+					<li><a href="/gallery">Gallery</a></li>
+					<li><a href="/blog">News</a></li>
+					<li><a href="/contact">Contact</a></li>
+					{{#if user}}
+					<li><a href="user/dashboard">Dashboard</a></li>
+					{{!-- <li><a href="/admin">Admin</a></li> --}}
+
+					{{else}}
+					<!-- Example single danger button -->
+					<li><a href="/account/login">Sign in</a></li>
+					<li><a href="/account/register">Sign up</a></li>
+					{{/if}}
+					{{#if (eq user.role 'admin')}}
+					<li><a href="/admin">Admin</a></li>
+					{{/if}}
+					
+				</ul>
+
+		</div>
+
+		
+		<div class="header-right">
+			{{!-- <a href="#" class="site-btn sb-line sb-big">+2348131139239</a> --}}
+			{{!-- <a href="" class="site-btn sb-big">+2348131139239</a> --}}
+		</div>
+	</div>
+</header> 
+
+
+

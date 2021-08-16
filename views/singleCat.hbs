@@ -1,0 +1,54 @@
+ 
+
+<section class="blog-section">
+       <div class="py-5 bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <span>Category</span>
+            <h3>All posts under {{#each post}}{{#if @first}}{{this.postCategory.categoryName}}{{/if}}{{/each}}</h3>
+            <p>{{#each post}}{{#if @first}}{{this.postCategory.categoryDesc}}{{/if}}{{/each}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-section bg-white">
+      <div class="container">
+        <div class="row">
+            {{#each post}}
+          <div class="col-lg-4 mb-4">
+            <div class="entry2">
+              <a href="/post/{{this._id}}"><img src="{{this.postImage}}" alt="Image" class="/frontend/img-fluid rounded recent-image"></a>
+              <div class="excerpt">
+              <span class="post-category text-white bg-secondary mb-3">{{this.postCategory.categoryName}}</span>
+
+              <h2><a href="/post/{{this._id}}">{{this.postName}}</a></h2>
+              <div class="post-meta align-items-center text-left clearfix">
+                <figure class="author-figure mb-0 mr-3 float-left"><img src="{{this.postAuthor.profileImage}}" alt="Image" class="img-fluid"></figure>
+                <span class="d-inline-block mt-1">By <a href="#">{{this.postAuthor.firstName}} {{this.postAuthor.lastName}}</a></span>
+                <span>{{this.created_at }}</span>
+              </div>
+              
+                <p>{{this.postContent}}</p>
+              </div>
+            </div>
+          </div>
+          {{/each}}
+        </div>
+        <div class="row text-center pt-5 border-top">
+          <div class="col-md-12">
+            <div class="custom-pagination">
+              <span>1</span>
+              <a href="#">2</a>
+              <a href="#">3</a>
+              <a href="#">4</a>
+              <span>...</span>
+              <a href="#">15</a>
+            </div>
+          </div>
+      </div>
+    </div>
+
+
+</section>

@@ -1,0 +1,83 @@
+<div class="content-wrapper">
+  <!-- Content Header (Page header) -->
+  <section class="content-header">
+    <div class="container-fluid">
+      <div class="row mb-2">
+        <div class="col-sm-6">
+          <h1>Add Gallery</h1>
+        </div>
+        <div class="col-sm-6">
+          <ol class="breadcrumb float-sm-right">
+            <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+            <li class="breadcrumb-item active">Gallery</li>
+          </ol>
+        </div>
+      </div>
+    </div><!-- /.container-fluid -->
+  </section>
+
+  <!-- Main content -->
+  <section class="content">
+    <div class="container-fluid">
+      <div class="row">
+        <!-- left column -->
+        <div class="col-md-12">
+          <!-- jquery validation -->
+          <div class="card card-primary">
+            <!-- /.card-header -->
+            <!-- form start -->
+
+            {{> messages}}
+            <form role="form" id="quickForm" method="POST" action="/postgallery/update/{{postgallery.id}}">
+              <div class="card-body">
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Gallery Name</label>
+                  <input type="text" name="postgallery_name" class="form-control" id="exampleInputEmail1"
+                    placeholder="Enter gallery" value="{{postgallery.postgalleryName}}">
+                </div>
+                <div class="form-group">
+                  <div class="row">
+                    <img src="{{postgallery.postgalleryImage}}" alt="" width="200" height="200">
+                  </div>
+                  <label for="exampleInputEmail1">Gallery Image</label>
+                  <input type="file" name="postgallery_image" class="form-control-file" id="exampleInputEmail1"
+                    placeholder="Enter image" value="{{postgallery.postgalleryImage}}">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Gallery Category</label>
+                  <select name="postgallery_category" class="form-control custom-select" id="">
+                    <option value="{{postgallery.postgalleryCategory.id}}" selected>{{postgallery.postgalleryCategory.galleryName}}</option>
+                    {{#each gallery}}
+                    <option value="{{this.id}}">{{this.galleryName}}</option>
+                    {{/each}}
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputDescription">Post Description</label>
+                  <div class="row">
+                    <textarea name="postgallery_desc" id="" class="form-control" rows="5">{{postgallery.postgalleryDesc}}</textarea>
+                  </div>
+                </div>
+                <div class="form-group mb-0">
+                </div>
+              </div>
+              <!-- /.card-body -->
+              <div class="card-footer">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </form>
+          </div>
+          <!-- /.card -->
+        </div>
+        <!--/.col (left) -->
+        <!-- right column -->
+        <div class="col-md-6">
+
+        </div>
+        <!--/.col (right) -->
+      </div>
+      <!-- /.row -->
+    </div><!-- /.container-fluid -->
+  </section>
+  <!-- /.content -->
+</div>

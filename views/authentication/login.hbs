@@ -1,0 +1,23 @@
+<div class="container mb-5">
+    <h1 class="text-center">Sign In</h1>
+    <div class="row mt-3">
+        <div class="col-md-6 mx-auto">
+
+
+            {{> messages }}
+            <form method="POST" action="/account/login">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" name="password" id="exampleInputPassword1">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+
+
+        </div>
+    </div>
+</div>

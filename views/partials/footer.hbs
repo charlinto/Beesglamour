@@ -1,0 +1,87 @@
+<footer class="footer-section set-bg" data-setbg="/frontend/img/footer-bg.jpg">
+		<div class="footer-warp">
+			<div class="footer-widgets">
+				<div class="row">
+					<div class="col-xl-7 col-lg-7">
+						<div class="row">
+							<div class="col-xl-4 col-lg-5 col-md-6">
+								<div class="footer-widget about-widget">
+									<img src="/frontend/img/beeeeees.jpg" alt="">
+									<p>The most beautiful makeup for a woman is passion. But cosmetics are easier to buy.</p>
+									<div class="fw-social">
+										<a href="#"><i class="fa fa-pinterest"></i></a>
+										<a href="#"><i class="fa fa-facebook"></i></a>
+										<a href="#"><i class="fa fa-twitter"></i></a>
+										<a href="#"><i class="fa fa-dribbble"></i></a>
+										<a href="#"><i class="fa fa-behance"></i></a>
+										<a href="#"><i class="fa fa-linkedin"></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-6 col-lg-6 col-md-6 offset-xl-2 offset-lg-1 offset-md-0">
+								<div class="footer-widget list-widget">
+									<h4 class="fw-title"><i class="flaticon-009-makeup-5"></i>Our Services</h4>
+									<ul>
+										<li><a href="#">Manicure</a></li>
+										<li><a href="#">Pedicure</a></li>
+										<li><a href="#">Making Up</a></li>
+										<li><a href="#">Training</a></li>
+										<li><a href="#">Hair Dressing</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-4 col-lg-5 offset-xl-1 offset-lg-0 offset-md-0">
+						<div class="footer-widget contact-widget">
+							<h4 class="fw-title"><i class="flaticon-039-make-up"></i>Make an appointment</h4>
+							{{> messages}}
+							<form  action ="/bookMe" method ="POST"class="fw-contact-form">
+								<div class="cf-inputs">
+									<div class="cf-input">
+										<input type="text" placeholder="Your Name" name ="fullname">
+									</div>
+									<div class="cf-input">
+										<input type="text" class="cf-input" placeholder="Your E-mail" name ="email">
+									</div>
+									<div class="cf-input">
+										<input type="text" class="cf-input" placeholder="Service you need" name ="service">
+									</div>
+									<div class="cf-input">
+										<input type="text" class="cf-input" placeholder="phone number" name ="phonenumber">
+									</div>
+									<div class="cf-input">
+										<input type="text" class="cf-input datepicker" placeholder="Date" name ="date">
+									</div>
+								</div>
+								<textarea placeholder="Your Message" name = "message"></textarea>
+								<button class="site-btn">Submit</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<div class="footer-nav">
+					<ul>
+						<li><a href="/">Home</a></li>
+						<li><a href="/about">About us</a></li>
+						<li><a href="/services">Services</a></li>
+						<li><a href="/blog">News</a></li>
+						<li><a href="/contact">Contact</a></li>
+					</ul>
+				</div>
+				<div class="copyright">
+					<p>
+						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						Copyright &copy;
+						<script>document.write(new Date().getFullYear());</script> All rights reserved 
+						is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="/frontend/https://colorlib.com/"
+							target="_blank">Colorlib</a>
+						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- Footer section end -->

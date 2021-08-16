@@ -1,0 +1,67 @@
+<!-- Services section -->
+<section class="services-section spad set-bg" data-setbg="#">
+    <div class="container">
+        <div class="section-title text-white ">
+            <h2 style="text-align: center;">Our Services</h2>
+        </div>
+            <div class="row">
+                <!-- service -->
+                {{#each postServ}}
+                <div class="col-lg-4 col-md-6 service text-white">
+                    {{#if (eq this.postserviceName 'Hair Dressing')}}
+                    <i class="flaticon-016-woman"></i>
+                    {{/if}}
+                    {{#if (eq this.postserviceName 'Manicure & Pedicure')}}
+                    <i class="flaticon-009-makeup-5"></i>
+                    {{/if}}
+                    {{#if (eq this.postserviceName 'Make Up & Training')}}
+                    <i class="flaticon-048-makeup"></i>
+                    {{/if}}
+                    <h2>{{this.postserviceName}}</h2>
+                    <p>{{this.postserviceDesc}}</p>
+                </div>
+                {{/each}}
+            </div>
+    </div>
+</section>
+<!-- Services section end -->
+
+<section class="popular-services-section">
+    <div class="container">
+        <div class="section-title">
+            <h2>Most Popular</h2>
+        </div>
+        <div class="popular-services-slider owl-carousel">
+            <div class="service popular-item">
+                  <div class="col-md-6 about-img">
+                    <img src="http://res.cloudinary.com/bee-glamoure/image/upload/v1612337925/ucoegc3eogm6f7a61xry.jpg" alt="">
+                    </div>
+                {{!-- <i class="flaticon-016-woman"></i> --}}
+                <h2>Hair Dressing</h2>
+                <p> Invest in your hair, it is the crown you never take off.Inner beauty is great but fabulous hair never hurts </p>
+                {{!-- <a href="#">More Info</a> --}}
+            </div>
+            <div class="service popular-item">
+                
+                  <div class="col-md-6 about-img">
+                    <img src="http://res.cloudinary.com/bee-glamoure/image/upload/v1611734778/zr4s8bzxbrxuuk7nifvs.jpg" alt="">
+                 </div>
+                {{!-- <i class="flaticon-048-makeup"></i> --}}
+                <h2>Make Up</h2>
+                <p>When I put on makeup, I’m not doing it to pander to antiquated patriarchal ideals of feminine beauty. I’m doing it because it makes me feel good.</p>
+                {{!-- <a href="#">More Info</a> --}}
+            </div>
+            <div class="service popular-item">
+                
+                <div class="col-md-6 about-img">
+                 <img src="http://res.cloudinary.com/bee-glamoure/image/upload/v1612343122/gw6ecvrw7rgzqfppovle.jpg" alt="">
+                </div>
+                {{!-- <i class="flaticon-009-makeup-5"></i> --}}
+                <h2>Manicure & Pedicure</h2>
+                <p> A girl should have two things: beautiful nails and fabulous Toes.</p>
+                {{!-- <a href="#">More Info</a> --}}
+            </div>
+    
+        </div>
+    </div>
+</section>
